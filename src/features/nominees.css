@@ -1,0 +1,21 @@
+.nom-container{
+  display: grid;
+  grid-template-columns: 10rem 3rem 3rem;
+  text-align: left;
+
+  column-gap: 3rem;
+}
+
+.nom-title{
+  grid-column: 1;
+  word-wrap: break-word;
+}
+.nom-year{
+  grid-column: 2;
+}
+.nom-button{
+  width: 4rem;
+  height: 2rem;
+  grid-column: 3;
+  margin: 0px;
+}

@@ -1,0 +1,42 @@
+.container{
+  width: auto;
+}
+
+.title{
+  text-align: center;
+  font-weight:bolder;
+}
+.year{
+  font-weight: lighter;
+  text-align: center;
+}
+button{
+  padding: .20rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  background-color: white;
+  border-color: #C5B358;
+  border-radius: 25px;
+  transition: background-color .25s;
+}
+button:disabled{
+  border: 0px;
+  transition: none;
+  background-color: white;
+}
+button:disabled:hover{
+  background-color: white;
+}
+button:hover{
+  background-color: gold;
+  border-color: gold;
+}
+img{
+  height: 15rem;
+}
+
+input[type=text]{
+  margin: 2em;
+  padding: .25rem;
+  border-bottom: solid;
+}
