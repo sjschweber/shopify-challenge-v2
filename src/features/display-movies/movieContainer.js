@@ -6,6 +6,7 @@ import {
   withdraw
 } from '../movie-search/movieSearchSlice';
 import './movieContainer.css'
+import image from '../../no-image.png';
 
 export function MovieContainer(){
   const dispatch = useDispatch();
@@ -13,16 +14,24 @@ export function MovieContainer(){
   const nominees = useSelector(state => state.movieTitle.nominees)
 
   return movieTitles !== null ? movieTitles.map((movie, index) => {
+
     return (
-      <div className="container">
-        <img src={movie.Poster}/>
+      <div className="movie-container">
+
+        <img src={movie.Poster !== 'N/A' ? movie.Poster : image} alt={movie.Title + ' poster'}/>
         <div className="title">
           {movie.Title}
         </div>
         <div className="year">
           {movie.Year}
         </div>
-        <button disabled={nominees.map(movie => movie.imdbID).includes(movie.imdbID)} onClick={() => dispatch(nominate(movie))}>Nominate</button>
+        {
+          nominees.map(movie => movie.imdbID).includes(movie.imdbID)
+          ? <div className="nominated">Nominated</div>
+           : <button disabled={nominees.length >= 5} className="nom-button" onClick={() => dispatch(nominate(movie))}>Nominate</button>
+        }
+
+
       </div>
     )
   }) : null

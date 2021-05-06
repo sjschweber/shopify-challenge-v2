@@ -1,8 +1,15 @@
-.container{
-  width: auto;
+.movie-container{
+  width: 10rem;
+  color: black;
 }
-
+.movie-search-input{
+  padding: .75rem;
+  font-size: 20px;
+  margin: 2rem;
+  border-bottom: solid;
+}
 .title{
+  padding: .5rem;
   text-align: center;
   font-weight:bolder;
 }
@@ -10,33 +17,41 @@
   font-weight: lighter;
   text-align: center;
 }
-button{
-  padding: .20rem;
-  padding-left: .5rem;
-  padding-right: .5rem;
-  background-color: white;
-  border-color: #C5B358;
-  border-radius: 25px;
-  transition: background-color .25s;
-}
-button:disabled{
-  border: 0px;
-  transition: none;
-  background-color: white;
-}
-button:disabled:hover{
-  background-color: white;
-}
-button:hover{
-  background-color: gold;
-  border-color: gold;
-}
-img{
-  height: 15rem;
+
+.nom-button{
+  background-color: #FBFCD4;
+  border-color: #151515;
+  border-width: thin;
+  border-radius: 2px;
+  transition:  .5s;
+  padding: .5rem;
+  margin: .5rem;
+
 }
 
-input[type=text]{
-  margin: 2em;
+.nominated{
+  font-weight: bold;
+  color: #FBFCD4;
+  background-color: black;
   padding: .25rem;
-  border-bottom: solid;
+  margin-top: .5rem;
+}
+
+.nom-button:hover:enabled{
+  background-color: black;
+  border-color: gold;
+  color: #FBFCD4;
+  border-radius: 7px;
+}
+
+img{
+  width: 10rem;
+  height: 15rem;
+  border: solid;
+  border-color: #151515;
+  transition: .3s ease-in-out;
+
+}
+img:hover{
+  transform: scale(1.01)
 }

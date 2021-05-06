@@ -11,17 +11,17 @@ export function Nominees(){
   const nominees = useSelector(state => state.movieTitle.nominees)
   const dispatch = useDispatch();
 
-  return nominees.map(movie => {
+  return nominees.length > 0 ? nominees.map((movie, index) => {
     return (
       <div className='nom-container'>
         <div className='nom-title'>
-          {movie.Title}
+          {index + 1}. {movie.Title}
         </div>
         <div className='nom-year'>
           {movie.Year}
         </div>
-        <button className='nom-button' onClick={() => dispatch(withdraw(movie))}>Remove</button>
+        <button className='remove-button' onClick={() => dispatch(withdraw(movie))}>Remove</button>
       </div>
     )
-  })
+  }) : "Please select up to 5 nominees"
 }

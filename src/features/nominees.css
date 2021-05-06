@@ -1,21 +1,29 @@
 .nom-container{
   display: grid;
   grid-template-columns: 10rem 3rem 3rem;
+  grid-template-rows: auto auto;
   text-align: left;
-
-  column-gap: 3rem;
+  column-gap: 2rem;
+  justify-content: center;
+  row-gap: 2rem;
 }
 
 .nom-title{
   grid-column: 1;
   word-wrap: break-word;
+
 }
 .nom-year{
   grid-column: 2;
 }
-.nom-button{
+.remove-button{
   width: 4rem;
   height: 2rem;
   grid-column: 3;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
+  background-color: #FBFCD4;
+  border-color: #151515;
+  border-radius: 10px;
+  transition:  .5s;
 }

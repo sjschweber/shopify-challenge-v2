@@ -16,7 +16,7 @@ export function MovieSearch(){
   }
   return(
     <div>
-      <input type="text" onChange={(e) => dispatch(getMovieTitles(e.target.value))}/>
+      <input type="text" className="movie-search-input" placeholder="ex. Batman" onChange={(e) => dispatch(getMovieTitles(e.target.value))}/>
     </div>
   )
 }
