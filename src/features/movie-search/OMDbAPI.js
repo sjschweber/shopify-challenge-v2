@@ -1,5 +1,5 @@
 // A mock function to mimic making an async request for data
-require('dotenv').config({path: '../../../.env'})
+//require('dotenv').config({path: '../../../.env'})
 const axios = require('axios')
 
 export function fetchMovieTitles(movieTitle) {
