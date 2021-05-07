@@ -1,3 +1,6 @@
+body{
+  background-color: #FBFCD4;
+}
 .App {
   text-align: center;
   height: 100vh;
@@ -63,11 +66,6 @@ p{
   border-radius: 5px;
 
 }
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
 
 @media(max-width: 700px){
   .movies-container{
@@ -77,19 +75,22 @@ p{
 
 @media(min-width: 701px) and (max-width: 800px){
   .movies-container{
-    grid-template-columns: auto auto
+    grid-template-columns: auto auto;
+
   }
 }
 
 @media(min-width: 801px) and (max-width: 1050px){
   .movies-container{
-    grid-template-columns: auto auto auto
+    grid-template-columns: auto auto auto;
+
   }
 }
 
 @media(min-width: 1051px) and (max-width: 1220px){
   .movies-container{
-    grid-template-columns: auto auto auto auto
+    grid-template-columns: auto auto auto auto;
+
   }
 }
 

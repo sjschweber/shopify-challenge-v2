@@ -1,6 +1,10 @@
 .movie-container{
   width: 10rem;
+  display: grid;
+  grid-template-rows: auto 2rem 1rem 3rem;
+  row-gap: .75rem;
   color: black;
+
 }
 .movie-search-input{
   padding: .75rem;
@@ -12,6 +16,9 @@
   padding: .5rem;
   text-align: center;
   font-weight:bolder;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .year{
   font-weight: lighter;

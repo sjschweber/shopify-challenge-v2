@@ -27,3 +27,27 @@
   border-radius: 10px;
   transition:  .5s;
 }
+
+@media(max-width: 700px){
+  .nom-container{
+    grid-template-columns: auto
+  }
+}
+
+@media(min-width: 701px) and (max-width: 800px){
+  .nom-container{
+    grid-template-columns: auto auto
+  }
+}
+
+@media(min-width: 801px) and (max-width: 1050px){
+  .nom-container{
+    grid-template-columns: auto auto auto
+  }
+}
+
+@media(min-width: 1051px) and (max-width: 1220px){
+  .nom-container{
+    grid-template-columns: auto auto auto auto
+  }
+}
