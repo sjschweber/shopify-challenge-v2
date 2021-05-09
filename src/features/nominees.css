@@ -11,32 +11,32 @@
 .nom-number{
   grid-column: 1;
 }
+
 .nom-title{
   grid-column: 2;
   word-wrap: break-word;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-
-
 }
+
 .nom-year{
   grid-column: 3;
   font-weight: lighter;
 }
+
 .remove-button{
   width: 3rem;
-  height: 2rem;
   grid-column: 4;
   padding: 0;
   margin: 0;
   background-color: white;
-  border-color: #151515;
-  border-width: lighter;
-  border-radius: 5px;
+  border: none;
+  border-radius: 3px;
   transition:  .5s;
 }
 
+/*CSS for transition group */
 .item-enter {
   opacity: 0;
 }
@@ -52,13 +52,13 @@
   transition: opacity 500ms ease-in;
 }
 
+/*Media queiries*/
 @media(max-width: 700px){
   .nom-container{
-    grid-template-columns: .25rem 5rem 2rem 3rem;
+    grid-template-columns: .25rem 4rem 2rem 3rem;
 
   }
 }
-
 @media(min-width: 701px) and (max-width: 800px){
 
   .nom-container{
@@ -66,15 +66,11 @@
   }
 
 }
-
-
-
 @media(min-width: 801px) and (max-width: 1050px){
   .nom-container{
     grid-template-columns: auto 13rem 3rem 2rem
   }
 }
-
 @media(min-width: 1151px){
   .nom-container{
     grid-template-columns: auto 11rem 3rem 2rem

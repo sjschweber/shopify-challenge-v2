@@ -39,10 +39,11 @@
 
 .nominated{
   font-weight: bold;
-  color: #FBFCD4;
+  color: white;
   background-color: black;
-  padding: .25rem;
-  margin-top: .5rem;
+  padding: .5rem;
+  margin: .5rem;
+  align-self: center;
 }
 
 .nom-button:hover:enabled{
