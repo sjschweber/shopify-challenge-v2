@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import logo from "./logo.svg";
-import { Counter } from "./features/counter/Counter";
 import {MovieContainer} from "./features/display-movies/movieContainer.js"
 import { MovieSearch } from "./features/movie-search/MovieSearch"
 import { Nominees } from "./features/Nominees.js"
