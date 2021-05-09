@@ -19,18 +19,22 @@ function App() {
   }
   return (
     <div className="App">
+
       {nominees.length >= 5 ? <div className="banner">Thank you for selecting 5 nominees!</div> : null}
-      <h1>The Shoppies</h1>
-      <div className="search-container">
-        <MovieSearch/>
+      <div className="header">
+        <h1 className="shoppies-title">The Shoppies</h1>
       </div>
+      <div className="layout">
+          <div className="search-container">
+            Search Movies to Nominate
+            <MovieSearch/>
+          </div>
+            <div className='nominees-container'><Nominees/></div>
 
-      <button className="trophy-button" onClick={handleToggle}>{toggleNominees ? "Hide nominees" : "Show Nominees"}</button>
-        {toggleNominees ? <div className='nominees-container'><Nominees/></div> : null}
-      <div className="movies-container">
-        <MovieContainer/>
+        <div className="movies-container">
+          <MovieContainer/>
+        </div>
       </div>
-
     </div>
   );
 }

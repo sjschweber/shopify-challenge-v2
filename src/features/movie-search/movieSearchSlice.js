@@ -16,9 +16,11 @@ export const getMovieTitles = createAsyncThunk(
   async (title) => {
     const response = await fetchMovieTitles(title);
     // The value we return becomes the `fulfilled` action payload
-    return response.data.Search.filter(item => item.Type === 'movie');
+    let movies = response.data.Search.filter(item => item.Type === 'movie')
+    return movies;
   }
 );
+
 
 
 export const movieTitleSlice = createSlice({

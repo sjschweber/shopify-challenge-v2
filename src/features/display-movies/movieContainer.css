@@ -9,7 +9,7 @@
 .movie-search-input{
   padding: .75rem;
   font-size: 20px;
-  margin: 2rem;
+  margin-top: 2rem;
   border-bottom: solid;
 }
 .title{
@@ -26,13 +26,14 @@
 }
 
 .nom-button{
-  background-color: #FBFCD4;
-  border-color: #151515;
-  border-width: thin;
+  background-color: white;
+  border: dashed 2px #151515;
+  font-weight: bold;
   border-radius: 2px;
-  transition:  .5s;
+  transition:  1s;
   padding: .5rem;
   margin: .5rem;
+  color: #151515;
 
 }
 
@@ -46,8 +47,8 @@
 
 .nom-button:hover:enabled{
   background-color: black;
-  border-color: gold;
-  color: #FBFCD4;
+  border-color: white;
+  color: white;
   border-radius: 7px;
 }
 
