@@ -16,9 +16,20 @@ export const getMovieTitles = createAsyncThunk(
   async (title) => {
     const response = await fetchMovieTitles(title);
     // The value we return becomes the `fulfilled` action payload
-    return response.data.Search.filter(item => item.Type === 'movie');
+    let movies = response.data.Search.filter(item => item.Type === 'movie')
+    
+    return movies.reduce(function (arr, curr){
+      if(!arr.map(item => item.imdbID).includes(curr.imdbID)){
+        console.log('case 1: ' + arr + ", " + curr.imdbID)
+        return [...arr, curr]
+      }else{
+        console.log('case 2' , arr , ", " , curr.imdbID);
+        return arr;
+      }
+    }, []);
   }
 );
+
 
 
 export const movieTitleSlice = createSlice({
