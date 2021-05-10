@@ -62,7 +62,7 @@ p{
   grid-column: 2;
   grid-row: 1 / span 2;
   padding: .5rem;
-  height: 8rem;
+  height: auto;
   overflow: scroll;
   text-align: left;
   color: rgba(255, 255, 255, 0.52);
