@@ -9,21 +9,7 @@ body{
   justify-content: center;
   text-align: -webkit-center;
 }
-.trophy-button{
-  margin-bottom: 2rem;
-  background-color: #FBFCD4;
-  border: dotted;
-  color: black;
-  border-color: black;
-  width: 10rem;
-  transition: 1s;
-  padding: .5rem;
-}
-.trophy-button:hover{
-  background-color: black;
-  color: #FBFCD4;
-  border-color: #FFDD03;
-}
+
 h1{
   padding-top: 2rem;
   margin: 0;

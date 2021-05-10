@@ -24,8 +24,6 @@ function App() {
       <div className="search-container">
         <MovieSearch/>
       </div>
-
-      <button className="trophy-button" onClick={handleToggle}>{toggleNominees ? "Hide nominees" : "Show Nominees"}</button>
         {toggleNominees ? <div className='nominees-container'><Nominees/></div> : null}
       <div className="movies-container">
         <MovieContainer/>

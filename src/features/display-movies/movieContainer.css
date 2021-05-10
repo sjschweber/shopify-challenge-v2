@@ -51,6 +51,13 @@
   border-radius: 7px;
 }
 
+.nom-button:disabled{
+  background-color: black;
+  border: none;
+  color: #FBFCD4;
+  border-radius: 7px;
+}
+
 img{
   width: 10rem;
   height: 15rem;
