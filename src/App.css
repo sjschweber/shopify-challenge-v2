@@ -9,6 +9,10 @@ p{
   margin: none;
 }
 
+a{
+  color: black;
+}
+
 .App {
   text-align: center;
   height: 100vh;

@@ -56,6 +56,10 @@ function App() {
 
       </div>
 
+      <div className="footer">
+        <a href="https://github.com/sjschweber/shopify-challenge-v2">Check out the project on Github!</a>
+      </div>
+
     </div>
   );
 }
