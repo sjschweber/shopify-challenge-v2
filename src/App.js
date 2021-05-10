@@ -37,6 +37,8 @@ function App() {
       <div className="layout">
         <div className="search-container">
           Search Movies to Nominate
+          <br></br>
+          <p style={{fontWeight: 'light', fontSize: '15px'}}>(Make sure to click "nominate" underneath the movie info)</p>
           <MovieSearch/>
         </div>
 

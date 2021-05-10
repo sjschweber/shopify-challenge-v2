@@ -54,9 +54,9 @@
 }
 
 .nom-button:disabled{
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0.52);
   border: none;
-  color: #FBFCD4;
+  color: white;
   border-radius: 7px;
 }
 
